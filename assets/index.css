@@ -8,6 +8,8 @@
   --lightColor: #badf9a;
   --lighterColor: #c2dda8;
   --fadeColor: #d9d9d9;
+  --imageBorderRadius: 17px;
+  --imageBorderSize: 10px;
 }
 
 body {
@@ -102,4 +104,80 @@ p {
   font-family: var(--secondaryFont);
   color: var(--fadeColor);
   font-size: 4.188rem;
+}
+
+.hobby {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+.hobby .collage,
+.hobby .message {
+  height: 100%;
+}
+
+.collage {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.collage .rectangle {
+  background-color: var(--secondaryColor);
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.collage .pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cover-photo {
+  height: 70vh;
+  width: 50vw;
+  border-radius: var(--imageBorderRadius);
+  border: var(--imageBorderSize) solid white;
+  object-fit: cover;
+  object-position: 0 64%;
+}
+
+.profile-photo-container {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+}
+
+.profile-photo {
+  height: 37vh;
+  border: var(--imageBorderSize) solid white;
+  border-radius: var(--imageBorderRadius);
+  transform: translateX(-30%);
+}
+
+.profile-photo-container .design {
+  transform: translateX(30%) rotate(344deg);
+  height: 22vh;
+}
+
+.hobby .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby .message p {
+  font-family: var(--secondaryFont);
+  font-size: 1.875rem;
+  text-align: center;
 }
