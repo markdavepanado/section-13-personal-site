@@ -7,6 +7,7 @@
   --darkerColor: #376f61;
   --lightColor: #badf9a;
   --lighterColor: #c2dda8;
+  --fadeColor: #d9d9d9;
 }
 
 body {
@@ -22,6 +23,7 @@ section {
 }
 
 h1,
+h2,
 p {
   margin: 0;
 }
@@ -84,4 +86,20 @@ p {
 
 .quote .image-container img {
   transform: rotateX(180deg);
+}
+
+.quote .message {
+  margin-top: 10rem;
+}
+
+.quote .message h2 {
+  font-size: 1.563rem;
+  font-weight: normal;
+  transform: translateX(-4.813rem);
+}
+
+.quote .message p {
+  font-family: var(--secondaryFont);
+  color: var(--fadeColor);
+  font-size: 4.188rem;
 }
