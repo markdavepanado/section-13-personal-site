@@ -149,7 +149,7 @@ p {
   object-position: 0 64%;
 }
 
-.profile-photo-container {
+.hobby .profile-photo-container {
   position: absolute;
   bottom: -10%;
   left: 0;
@@ -158,14 +158,15 @@ p {
   align-items: flex-end;
 }
 
-.profile-photo {
+.hobby .profile-photo {
   height: 37vh;
   border: var(--imageBorderSize) solid white;
   border-radius: var(--imageBorderRadius);
   transform: translateX(-30%);
 }
 
-.profile-photo-container .design {
+.hobby .design,
+.about-me .design {
   transform: translateX(30%) rotate(344deg);
   height: 22vh;
 }
@@ -180,4 +181,72 @@ p {
   font-family: var(--secondaryFont);
   font-size: 1.875rem;
   text-align: center;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.about-me .collage {
+  justify-content: center;
+}
+
+.about-me .collage .rectangle {
+  right: 0;
+  left: initial;
+}
+
+.about-me .cover-photo {
+  object-position: center;
+  height: 50vh;
+  width: 25vw;
+}
+
+.about-me .design {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-30%, 45%) rotate(195deg);
+}
+
+.about-me .title {
+  display: flex;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+}
+
+.about-me .title h2 {
+  font-family: var(--secondaryFont);
+  font-size: 3.438rem;
+}
+
+.about-me .title img {
+  transform: rotate(240deg);
+  height: 12vh;
+}
+
+.about-me .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-me .message .details h3 {
+  font-size: 1.438rem;
+}
+
+.about-me .message .details p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.about-me .message .details ul {
+  line-height: 3.125rem;
+}
+
+ul {
+  list-style-type: "🪴  "; /* Unicode character */
 }
