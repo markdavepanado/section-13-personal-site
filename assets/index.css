@@ -18,6 +18,7 @@ body {
   background-color: #ffffff;
   padding: 0 2rem;
   margin: 0;
+  position: relative;
 }
 
 section {
@@ -304,4 +305,20 @@ ul {
   opacity: 0;
   margin-top: 10rem;
   width: 0;
+}
+
+section.footer {
+  height: auto;
+  display: inline-block;
+  background-color: var(--secondaryColor);
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  padding: 0.625rem;
+  border-radius: 0.313rem 0.313rem 0 0;
+}
+
+section.footer p {
+  font-size: 0.625rem;
+  color: var(--darkColor);
 }
