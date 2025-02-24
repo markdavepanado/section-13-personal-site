@@ -259,3 +259,49 @@ ul {
 .about-me .message .details span {
   font-weight: bold;
 }
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-me .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me .image-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.contact-me .message h2 {
+  font-family: var(--secondaryFont);
+  font-size: 5.438rem;
+}
+
+.contact-me .message p {
+  font-size: 0.938rem;
+  margin: 0.313rem 0;
+}
+
+.contact-me .message button {
+  background-color: var(--primaryColor);
+  color: #ffffff;
+  border: 0;
+  padding: 0.438rem 0.938rem;
+  border-radius: 0.313rem;
+  font-weight: bold;
+  margin-top: 1.563rem;
+}
+
+.contact-me .message img.hidden {
+  opacity: 0;
+  margin-top: 10rem;
+  width: 0;
+}
