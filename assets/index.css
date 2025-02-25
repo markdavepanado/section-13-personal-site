@@ -461,7 +461,7 @@ section.footer p {
   }
 
   .hobby .photo-leaf-design {
-    transform: translate(10%, 10%) rotate(170deg);
+    transform: translate(5%, 5%) rotate(170deg);
   }
 
   .hobby .message p {
@@ -487,15 +487,6 @@ section.footer p {
 }
 
 @media (max-width: 795px) {
-  /* .about-me .cover-photo {
-    height: 40vh !important;
-    width: 35vw;
-  }
-
-  .about-me .photo-leaf-design {
-    height: 12vh !important;
-  } */
-
   .about-me .message {
     justify-content: flex-start;
     margin-top: 5.625rem;
@@ -507,10 +498,6 @@ section.footer p {
 }
 
 @media (max-width: 770px) {
-  .hobby .photo-leaf-design {
-    height: 10vh !important;
-  }
-
   .hobby .cover-photo {
     width: 90vw;
   }
@@ -521,15 +508,44 @@ section.footer p {
 
   .hobby .photo-leaf-design {
     justify-self: flex-end;
+    height: 10vh !important;
   }
 
   .hobby .profile-photo {
     height: 20vh !important;
   }
+
+  .about-me .collage .rectangle {
+    width: 70%;
+  }
+
+  .about-me .cover-photo {
+    height: 40vh !important;
+    width: 50vw;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 12vh !important;
+  }
 }
 
-@media (max-width: 720px) {
-  /* .hobby .profile-photo {
-    height: 17vh !important;
-  } */
+@media (max-width: 700px) {
+  .about-me .collage .rectangle {
+    width: 80%;
+  }
+
+  .about-me .cover-photo {
+    width: 55vw;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 12vh !important;
+    transform: translate(0, 50%) rotate(180deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .hobby .photo-leaf-design {
+    height: 8vh !important;
+  }
 }
