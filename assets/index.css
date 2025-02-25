@@ -83,12 +83,11 @@ p {
 .quote .image-container {
   position: absolute;
   top: -1%;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 .quote .image-container img {
   transform: rotateX(180deg);
+  width: 100%;
 }
 
 .quote .message {
@@ -157,6 +156,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: flex-end;
+  width: 100%;
 }
 
 .hobby .profile-photo {
@@ -281,6 +281,10 @@ ul {
   bottom: 0;
 }
 
+.contact-me .image-container img {
+  width: 100%;
+}
+
 .contact-me .message h2 {
   font-family: var(--secondaryFont);
   font-size: 5.438rem;
@@ -321,4 +325,227 @@ section.footer {
 section.footer p {
   font-size: 0.625rem;
   color: var(--darkColor);
+}
+
+@media (max-width: 1485px) {
+  .about-me .cover-photo {
+    height: 43vh !important;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 17vh !important;
+  }
+}
+
+@media (max-width: 1385px) {
+  .about-me .photo-leaf-design {
+    height: 14vh !important;
+  }
+}
+
+@media (max-width: 1370px) {
+  .photo-leaf-design {
+    height: 17vh !important;
+  }
+
+  .profile-photo {
+    height: 30vh !important;
+  }
+}
+
+@media (max-width: 1285px) {
+  .about-me .cover-photo {
+    height: 36vh !important;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 11vh !important;
+  }
+}
+
+@media (max-width: 1245px) {
+  .profile-photo {
+    height: 27vh !important;
+  }
+
+  .hobby .cover-photo {
+    height: 63vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hobby .message p {
+    font-size: 1.688rem;
+  }
+
+  .hobby .cover-photo {
+    height: 56vh;
+  }
+
+  .profile-photo {
+    height: 23vh !important;
+  }
+
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .about-me .collage {
+    grid-row: 1;
+  }
+
+  .about-me .collage .rectangle {
+    right: initial;
+    width: 35%;
+  }
+
+  .about-me .collage .pictures {
+    transform: translateY(15%);
+  }
+
+  .about-me .title {
+    position: initial;
+  }
+
+  .about-me .title img {
+    display: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .photo-leaf-design {
+    height: 14vh !important;
+  }
+
+  .profile-photo {
+    height: 20vh !important;
+  }
+}
+
+@media (max-width: 910px) {
+  .hobby .cover-photo {
+    height: 50vh;
+  }
+
+  .photo-leaf-design {
+    height: 11vh !important;
+  }
+
+  .profile-photo {
+    height: 17vh !important;
+  }
+}
+
+@media (max-width: 845px) {
+  .hobby {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .hobby .collage {
+    justify-content: center;
+  }
+
+  .hobby .collage .rectangle {
+    left: inherit;
+  }
+
+  .hobby .cover-photo {
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .hobby .profile-photo {
+    height: 23vh !important;
+  }
+
+  .hobby .photo-leaf-design {
+    transform: translate(5%, 5%) rotate(170deg);
+  }
+
+  .hobby .message p {
+    font-size: 1.875rem;
+  }
+
+  .about-me .collage .rectangle {
+    width: 70%;
+  }
+
+  .about-me .title {
+    margin-top: 9rem;
+  }
+
+  .about-me .cover-photo {
+    height: 45vh !important;
+    width: 50vw;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 14vh !important;
+  }
+}
+
+@media (max-width: 795px) {
+  .about-me .message {
+    justify-content: flex-start;
+    margin-top: 5.625rem;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 770px) {
+  .hobby .cover-photo {
+    width: 90vw;
+  }
+
+  .hobby .profile-photo {
+    transform: translateX(-10%);
+  }
+
+  .hobby .photo-leaf-design {
+    justify-self: flex-end;
+    height: 10vh !important;
+  }
+
+  .hobby .profile-photo {
+    height: 20vh !important;
+  }
+
+  .about-me .collage .rectangle {
+    width: 70%;
+  }
+
+  .about-me .cover-photo {
+    height: 40vh !important;
+    width: 50vw;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 12vh !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-me .collage .rectangle {
+    width: 80%;
+  }
+
+  .about-me .cover-photo {
+    width: 55vw;
+  }
+
+  .about-me .photo-leaf-design {
+    height: 12vh !important;
+    transform: translate(0, 50%) rotate(180deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .hobby .photo-leaf-design {
+    height: 8vh !important;
+  }
 }
