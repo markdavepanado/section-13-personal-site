@@ -322,3 +322,106 @@ section.footer p {
   font-size: 0.625rem;
   color: var(--darkColor);
 }
+
+@media (max-width: 1370px) {
+  .photo-leaf-design {
+    height: 17vh !important;
+  }
+
+  .profile-photo {
+    height: 30vh !important;
+  }
+
+  .about-me .cover-photo {
+    height: 43vh !important;
+  }
+}
+
+@media (max-width: 1245px) {
+  .profile-photo {
+    height: 27vh !important;
+  }
+
+  .hobby .cover-photo {
+    height: 63vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hobby .message p {
+    font-size: 1.688rem;
+  }
+
+  .hobby .cover-photo {
+    height: 56vh;
+  }
+
+  .profile-photo {
+    height: 23vh !important;
+  }
+}
+
+@media (max-width: 1030px) {
+  .photo-leaf-design {
+    height: 14vh !important;
+  }
+
+  .profile-photo {
+    height: 20vh !important;
+  }
+}
+
+@media (max-width: 910px) {
+  .hobby .cover-photo {
+    height: 50vh;
+  }
+
+  .photo-leaf-design {
+    height: 11vh !important;
+  }
+
+  .profile-photo {
+    height: 17vh !important;
+  }
+}
+
+@media (max-width: 845px) {
+  .hobby {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .hobby .collage {
+    justify-content: center;
+  }
+
+  .hobby .collage .rectangle {
+    left: inherit;
+    width: 50%;
+  }
+
+  .hobby .cover-photo {
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .hobby .profile-photo {
+    height: 23vh !important;
+  }
+
+  .hobby .photo-leaf-design {
+    transform: translate(10%, 10%) rotate(170deg);
+    height: 14vh !important;
+  }
+
+  .hobby .message p {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .hobby .photo-leaf-design {
+    transform: translate(50%, 10%) rotate(170deg);
+    height: 11vh !important;
+  }
+}
